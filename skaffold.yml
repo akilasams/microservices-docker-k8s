@@ -8,7 +8,7 @@ build:
     push: false
   artifacts:
     - image: akila97/client
-      context: client
+      context: client #folder
       docker:
         dockerfile: Dockerfile
       sync:
