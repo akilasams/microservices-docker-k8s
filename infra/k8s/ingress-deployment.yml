@@ -3,9 +3,9 @@ kind: Ingress
 metadata:
   name: ingress-service
   annotations:
-    ingressClassName: nginx
     nginx.ingress.kubernetes.io/use-regex: "true"
 spec:
+  ingressClassName: nginx
   rules:
     - host: posts.com
       http:
